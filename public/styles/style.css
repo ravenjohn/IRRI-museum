@@ -1,0 +1,109 @@
+* {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+	background: #a5a5a5; /* Old browsers */
+	background: -moz-linear-gradient(left, #a5a5a5 0%, #ffffff 39%, #ffffff 60%, #a5a5a5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a5a5a5), color-stop(39%,#ffffff), color-stop(60%,#ffffff), color-stop(100%,#a5a5a5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #a5a5a5 0%,#ffffff 39%,#ffffff 60%,#a5a5a5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #a5a5a5 0%,#ffffff 39%,#ffffff 60%,#a5a5a5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #a5a5a5 0%,#ffffff 39%,#ffffff 60%,#a5a5a5 100%); /* IE10+ */
+	background: linear-gradient(to right, #a5a5a5 0%,#ffffff 39%,#ffffff 60%,#a5a5a5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#a5a5a5',GradientType=1 ); /* IE6-9 */
+}
+
+header {
+	width: 100%;
+	height: 35px;
+	background: #4C7926;
+	border-bottom: 34px solid #E9E9E9;
+}
+
+#irri_logo{
+	float: left;
+}
+
+#inner_header{
+	margin: 0 auto;
+	width: 1366px;
+	height: 100%;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	margin: 0 20px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+#inner_body_div{
+	width: 1366px;
+	margin: 20px auto 0;
+}
+
+.page_title_div {
+	width: 100%;
+	margin: 50px 0px;
+}
+
+.page_title_div h1{
+	font-weight: bold;
+	color: #000000;
+	font-size: 35px;
+}
+
+.page_body_div{
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+
+#map{
+	float: left;
+	position: relative;
+}
+
+#map_info_div{
+	float: left;
+	height: 100%;
+	width: 300px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+footer{
+	background-image: url('../images/grass.png');
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	right: 0;
+}
+
+
+.mark{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	position: absolute;
+	cursor: pointer;
+	border: 3px solid #FFF;
+	box-shadow: 0 3px 10px #444;
+}
+
+.mark:hover{
+	box-shadow: 0 5px 13px #000;
+}
