@@ -1,44 +1,30 @@
-<html>
-	<head>
-		<title>IRRI Kiosk</title>
-		<link type="text/css" rel="stylesheet" href="styles/reset.css" />
-		<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat">
-		<link type="text/css" rel="stylesheet" href="styles/style.css" />
-	</head>
-	<body>
-		<header>
-			<div id="inner_header">
-				<img id="irri_logo" src="images/IRRI.png" width="95px" height="76px" alt="IRRI logo"/>
-				<nav>
-					<ul>
-						<li><a href="login">LOGIN</a></li>
-						<li><a href="map">INTERACTIVE MAP</a></li>
-						<li><a href="news">NEWS</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<section id="body_section">
-			<div id="inner_body_div">
-				<div class="page_title_div">
-					<h1>INTERACTIVE MAP</h1>
-				</div>
-				<div class="page_body_div">
-					<div id="map">
-						<img src="images/map.png" alt="map" width="auto" height="100%"/>
-					</div>
-					<div id="map_info_div">
-						<center>
-						Welcome to IRRI Museum!
-						</center>
-						<br />
-						Hover over the marks to explore our museum...
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer></footer>
-		<script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
-		<script type="text/javascript" src="scripts/script.js"></script>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>IRRI Riceworld Museum</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css" />
+	<link rel="stylesheet" href="styles/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="styles/menu.css" />
+</head>
+<body>
+	<div id="container">
+		<nav id="mainMenu" class="col-md-8 col-sm-8 mainMenu">
+			<ul>
+				<li><a class="btn btn-success btn-lg" href="http://www.irri-news.blogspot.com/">IRRI News</a></li>
+				<li><a class="btn btn-success btn-lg" href="map.html">Museum Map</a></li>
+				<li><a class="btn btn-success btn-lg" href="visitorLogin.html">Log In</a></li>
+				<li><a class="btn btn-success btn-lg" href="adminLogin.php">Admin Log In</a></li>
+			</ul>
+		</nav>
+		<aside id="twitterWidget" class="col-md-4 col-sm-4">
+			<a class="twitter-timeline"  href="https://twitter.com/hashtag/riceworld" data-widget-id="537697039870459904">#riceworld Tweets</a>
+		</aside>
+	</div>
+	
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script src="scripts/jquery-2.1.1.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+</body>
 </html>
