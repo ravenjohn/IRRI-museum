@@ -83,27 +83,13 @@ nav ul li a{
 footer{
 	background-image: url('../images/grass.png');
 	background-color: transparent;
-	background-position: center;
+	background-position: 0 4px;
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 120px;
 	position: absolute;
-	bottom: -4px;
+	bottom: 0;
 	left: 0;
 	right: 0;
 }
 
-
-.mark{
-	width: 20px;
-	height: 20px;
-	border-radius: 20px;
-	position: absolute;
-	cursor: pointer;
-	border: 3px solid #FFF;
-	box-shadow: 0 3px 10px #444;
-}
-
-.mark:hover{
-	box-shadow: 0 5px 13px #000;
-}

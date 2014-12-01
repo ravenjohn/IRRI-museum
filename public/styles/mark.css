@@ -1,0 +1,10 @@
+
+.mark{
+	position: absolute;
+	cursor: pointer;
+	border: 3px solid #FFF;
+}
+
+.mark:hover{
+	box-shadow: 0 5px 13px #000 !important;
+}
