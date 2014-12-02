@@ -13,15 +13,15 @@ var map = function (id, options) {
 			return;
 		}
 
-		// self.addMark(
-		// 	e.offsetX - temp,
-		// 	e.offsetY - temp,
-		// 	'Title',
-		// 	'description',
-		// 	'#000'
-		// );
+		self.addMark(
+			e.offsetX - temp,
+			e.offsetY - temp,
+			'Title',
+			'description',
+			'#000'
+		);
 
-		// self.showDialog(e.offsetX + mark_size + 10, e.offsetY - 100);
+		self.showDialog(e.offsetX + mark_size + 10, e.offsetY - 100);
 	});
 
 	this.addMark = function (x, y, title, desc, color) {
@@ -68,6 +68,21 @@ var map = function (id, options) {
 		dialog.style.background = '#FAFAFA';
 		dialog.style.border = '1px solid #EEE';
 		dialog.style.boxShadow = '5px 10px 20px #999';
+		dialog.innerHTML = '\
+			<form onsubmit="return false"> \
+				Title\
+				<br />\
+				<input type="text" name="title"/>\
+				<br />\
+				Description\
+				<br />\
+				<textarea class="dialog_textarea"></textarea>\
+				<br />\
+				<br />\
+				<button>Save</button>\
+				<button>Delete</button>\
+			</form>\
+		';
 
 		this.$element.append(dialog);
 	};
