@@ -1,4 +1,4 @@
-var db = openDatabase('IRRI', '1.0', 'So pro man', 5 * 1024 * 1024, function (success) {
+var db = openDatabase('IRRI', '', 'So pro man', 5 * 1024 * 1024, function (success) {
     console.log('Database successfully createdins');
 }, function (err) {
     console.log('err', err);
@@ -32,18 +32,6 @@ db.transaction(function (tx) {
     var id = 0;
 
     tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 855, 280, "title", "You are here", "red")');
-
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 740, 65, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 700, 55, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 705, 80, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 650, 10, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 600, 20, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 600, 120, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 650, 120, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 500, 120, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 225, 120, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-    tx.executeSql('INSERT OR REPLACE INTO maps(id, x, y, title, description, color) VALUES(' + (++id) + ', 225, 300, "title", "lorem ipsum", "rgb(46, 204, 113)")');
-
 });
 
 get_maps = function (cb) {
