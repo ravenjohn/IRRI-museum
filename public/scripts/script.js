@@ -82,28 +82,9 @@ myMap = new map('map', {
 });
 
 
-myMap.addMark(855, 280, 'title', 'You are here', 'red');
-
-var lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
-
-myMap.addMark(740, 65, 'title', lorem, '#9b59b6');
-myMap.addMark(700, 55, 'title', lorem, '#2ecc71');
-myMap.addMark(705, 80, 'title', lorem, '#f1c40f');
-myMap.addMark(650, 10, 'title', lorem, '#9b59b6');
-myMap.addMark(600, 20, 'title', lorem, '#2ecc71');
-myMap.addMark(600, 120, 'title', lorem, '#f1c40f');
-myMap.addMark(650, 120, 'title', lorem, '#9b59b6');
-myMap.addMark(500, 120, 'title', lorem, '#2ecc71');
-myMap.addMark(400, 120, 'title', lorem, '#f1c40f');
-myMap.addMark(225, 300, 'title', lorem, '#f1c40f');
-
-myMap.addMark(740, 415, 'title', lorem, '#9b59b6');
-myMap.addMark(700, 455, 'title', lorem, '#2ecc71');
-myMap.addMark(705, 480, 'title', lorem, '#f1c40f');
-myMap.addMark(650, 410, 'title', lorem, '#9b59b6');
-myMap.addMark(600, 420, 'title', lorem, '#2ecc71');
-myMap.addMark(200, 520, 'title', lorem, '#f1c40f');
-myMap.addMark(250, 520, 'title', lorem, '#9b59b6');
-myMap.addMark(300, 520, 'title', lorem, '#2ecc71');
-myMap.addMark(400, 520, 'title', lorem, '#f1c40f');
-myMap.addMark(225, 350, 'title', lorem, '#f1c40f');
+get_maps(function (marks) {
+	marks.forEach(function (mark) {
+		console.log(mark.color)
+		myMap.addMark(mark.x, mark.y, mark.title, mark.description, mark.color);
+	})
+})

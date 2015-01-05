@@ -102,6 +102,10 @@ footer{
 	margin-left: 100px;
 }
 
+#iframe {
+	margin-top: -11px;
+}
+
 #iframe, #twitterWidget{
 	display: inline-block;
 	float: left;
