@@ -95,20 +95,16 @@ footer{
 
 #twitterWidget, #twitter-widget-0{
 	width: 350px;
-	height: 600px;
-}
-
-#twitterWidget{
-	margin-left: 100px;
+	height: 50vh;
 }
 
 #iframe {
 	margin-top: -11px;
 }
 
-#iframe, #twitterWidget{
+#twitterWidget{
 	display: inline-block;
-	float: left;
+	float: right;
 }
 
 .form-control{
@@ -123,6 +119,55 @@ footer{
 
 .btn-success {
 	width: 100px;
+}
+
+.btn {
+	margin-top:20px;
+	margin-left:0px;
+	display:inline-block;
+	background: #34d981;
+	background-image: -webkit-linear-gradient(top, #34d981, #00a375);
+	background-image: -moz-linear-gradient(top, #34d981, #00a375);
+	background-image: -ms-linear-gradient(top, #34d981, #00a375);
+	background-image: -o-linear-gradient(top, #34d981, #00a375);
+	background-image: linear-gradient(to bottom, #34d981, #00a375);
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 40px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	padding: 30px;
+	width: 300px;
+}
+
+.btn:hover {
+	background: #38eb8c;
+	background-image: -webkit-linear-gradient(top, #38eb8c, #02bd88);
+	background-image: -moz-linear-gradient(top, #38eb8c, #02bd88);
+	background-image: -ms-linear-gradient(top, #38eb8c, #02bd88);
+	background-image: -o-linear-gradient(top, #38eb8c, #02bd88);
+	background-image: linear-gradient(to bottom, #38eb8c, #02bd88);
+	text-decoration: none;
+}
+
+#main_menu{
+	margin-top: 250px;
+	margin-left:150px;
+	display: inline-block;
+	width:500px;
+}
+
+#newsfeed{
+	display:inline-block;
+	height: 47vh;
+	width: 310px;
+	background: white;
+	padding: 20px;
+	padding-bottom: 5px;
+	overflow-y:auto;
 }
 
 .dialog_textarea{
